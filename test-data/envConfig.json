@@ -1,0 +1,7 @@
+{
+    "url": {
+        "testUrl": "https://gcm.test.stellantis.com/",
+        "devUrl": "https://gcm.dev.stellantis.com/",
+        "perfUrl": "https://gcm.perf.stellantis.com/"
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "gcm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "clean:allure": "rimraf allure-results allure-report",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "test:allure": "npm run clean:allure && npm run test && npm run report:generate && npm run report:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.13.13",
+    "allure-commandline": "^2.34.0",
+    "allure-playwright": "^3.2.2",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
